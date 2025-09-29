@@ -1,0 +1,149 @@
+/* = GLOBAL STYLES = */
+:root {
+  --primary: #004080;   /* navy */
+  --secondary: #ffcc00; /* gold */
+  --light: #f7f9fc;     /* light grey */
+  --text-dark: #333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #ffffff;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* = HEADER = */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: var(--primary);
+  padding: 15px 40px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--secondary);
+  color: #000;
+}
+
+/* = HERO / MAIN TITLE = */
+.Home-page h1 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  margin-top: 60px;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* = CONTENT CONTAINER = */
+.Content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* = HISTORY SECTION = */
+.history-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: var(--light);
+  border-left: 8px solid var(--secondary);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Left side text */
+.history-section .text h2 {
+  font-size: 26px;
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.history-section .text p {
+  font-size: 17px;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+/* Right side images */
+.history-section .images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.history-section .images img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.history-section .images img:hover {
+  transform: scale(1.05);
+}
+
+/* = FOOTER = */
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+/* = RESPONSIVE DESIGN = */
+@media (max-width: 768px) {
+  .history-section {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .history-section .images {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
