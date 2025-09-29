@@ -28,11 +28,11 @@ JHB NORTH PLUMBING WEBSITE
 
 5. Changelog
 
-- **v0.1**: Initial HTML structure created
-- **v0.2**: Added navigation menu and linked all pages
-- **v0.3**: Organised files into css/, js/, images/
-- **v0.4**: Added comments for readability
-- **v0.5**: Updated image paths and added alt text
+-  Initial HTML structure created
+-  Added navigation menu and linked all pages
+-  Organised files into css/, js/, images/
+-  Added comments for readability
+-  Updated image paths and added alt text
 
 6. References
 
