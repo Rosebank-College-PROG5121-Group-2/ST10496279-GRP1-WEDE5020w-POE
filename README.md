@@ -1,24 +1,40 @@
-"# ST10496279-GRP1-WEDE5020w-POE"
-JHB NORTH PLUMBING WEBSITE
+# JHB NORTH PLUMBING WEBSITE
+## ST10496279-GRP1-WEDE5020W-POE
+
+## Changelog
+
+1 [2025-09-29]
+- Added CSS sitemap section to README
+- Updated README formatting
+
+1[2025-09-28]
+- Fixed merge conflicts in Git repository
+- Updated History section images and text in CSS
+
+1 [2025-09-27]
+- Created initial project structure
+- Added header, hero, content, and footer sections in HTML and CSS
+
+1
 
 1. Student Info
 
 - Name: Taite Perumal
 - Student Number: ST10496279
 
-2. Project Overview
+1. Project Overview
    This is Part 1 of my Web Development POE.  
    The website is built for JHB North Plumbing, a plumbing business in Johannesburg North.  
    It showcases services, client feedback, and provides an easy way to contact the business.
 
-3. Website Goals
+1. Website Goals
 
 - Showcase services offered
 - Provide client testimonials
 - Offer contact details and location
 - Build trust with potential clients
 
-4. Sitemap
+1. Sitemap
 
 - index.html (Home)
 - about.html (About Us)
@@ -26,15 +42,20 @@ JHB NORTH PLUMBING WEBSITE
 - client-feedback.html (Client Feedback)
 - contact.html (Contact Us)
 
-5. Changelog
+1. Changelog
 
+-  Initial HTML structure created
+-  Added navigation menu and linked all pages
+-  Organised files into css/, js/, images/
+-  Added comments for readability
+-  Updated image paths and added alt text
 -  Initial HTML structure created
 -  Added navigation menu and linked all pages
 -  Organised files into css/, js/, images/
 -   bAdded comments for readability
 -  Updated image paths and added alt text
 
-6. References
+1. References
 
 - Images sourced from [Unsplash](https://unsplash.com) and [Pexels](https://pexels.com) (royalty-free).
 
