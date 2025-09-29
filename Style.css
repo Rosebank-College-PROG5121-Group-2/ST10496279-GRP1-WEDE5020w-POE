@@ -1,4 +1,9 @@
-/* = GLOBAL STYLES = */
+/*=============================
+  ST10496279-Taite Perumal
+  WEDE5020w - POE
+  Style.css
+  =============================*/
+/* GLOBAL STYLES */
 :root {
   --primary: #004080;   /* navy */
   --secondary: #ffcc00; /* gold */
@@ -15,7 +20,7 @@ body {
   line-height: 1.6;
 }
 
-/* = HEADER = */
+/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
@@ -23,7 +28,7 @@ header {
   position: sticky;
   top: 0;
   background-color: var(--primary);
-  padding: 15px 40px;
+  padding: 1rem 2.5rem;
   box-shadow: 0 3px 8px rgba(0,0,0,0.2);
   z-index: 1000;
 }
@@ -35,15 +40,15 @@ header {
 
 nav {
   display: flex;
-  gap: 25px;
+  gap: 1.5rem;
 }
 
 nav a {
   text-decoration: none;
   color: white;
   font-weight: 600;
-  font-size: 16px;
-  padding: 8px 14px;
+  font-size: 1rem;
+  padding: 0.5rem 0.8rem;
   border-radius: 6px;
   transition: all 0.3s ease;
 }
@@ -56,58 +61,56 @@ nav a:hover {
 /* MAIN TITLE */
 .Home-page h1 {
   text-align: center;
-  font-size: 42px;
+  font-size: 2.6rem;
   font-weight: bold;
-  margin-top: 60px;
+  margin-top: 3.5rem;
   color: var(--primary);
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-/* CONTENT CONTAINER  */
+/* CONTENT CONTAINER */
 .Content-container {
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 2.5rem 1rem;
 }
 
-/* HISTORY SECTION  */
+/* HISTORY SECTION */
 .history-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  max-width: 1100px;
-  margin: 60px auto;
-  padding: 40px;
+  gap: 2rem;
+  max-width: 100%;
+  margin: 3.5rem auto;
+  padding: 2.5rem;
   background-color: var(--light);
-  border-left: 8px solid var(--secondary);
-  border-radius: 12px;
+  border-left: 0.5rem solid var(--secondary);
+  border-radius: 0.75rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Left side text */
 .history-section .text h2 {
-  font-size: 26px;
+  font-size: 1.6rem;
   color: var(--primary);
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 .history-section .text p {
-  font-size: 17px;
+  font-size: 1rem;
   text-align: justify;
   line-height: 1.8;
 }
 
-/* Right side images */
 .history-section .images {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 .history-section .images img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   object-fit: cover;
   box-shadow: 0 3px 6px rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
@@ -117,12 +120,12 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* BUTTONS  */
+/* = BUTTONS = */
 .button {
   background-color: var(--primary);
   color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
+  padding: 0.6rem 1.25rem;
+  border-radius: 0.5rem;
   font-weight: 600;
   border: none;
   cursor: pointer;
@@ -151,16 +154,16 @@ footer {
   background: var(--primary);
   color: white;
   text-align: center;
-  padding: 20px;
-  margin-top: 60px;
-  font-size: 14px;
+  padding: 1.25rem;
+  margin-top: 3.5rem;
+  font-size: 0.875rem;
 }
 
-/* RESPONSIVE DESIGN */
+/* RESPONSIVE DESIGN  */
 @media (max-width: 1024px) {
   .history-section {
     grid-template-columns: 1fr;
-    padding: 30px;
+    padding: 2rem;
   }
 
   .history-section .images {
@@ -170,11 +173,54 @@ footer {
 
 @media (max-width: 768px) {
   nav {
-    gap: 12px;
+    gap: 0.75rem;
   }
 
   nav a {
-    font-size: 14px;
-    padding: 6px 10px;
+    font-size: 0.875rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .Home-page h1 {
+    font-size: 2rem;
+  }
+
+  .Content-container {
+    padding: 1.5rem 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .Home-page h1 {
+    font-size: 1.75rem;
+  }
+
+  .history-section {
+    padding: 1.5rem;
+  }
+
+  .history-section .text h2 {
+    font-size: 1.4rem;
+  }
+
+  .history-section .text p {
+    font-size: 0.95rem;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
   }
 }
