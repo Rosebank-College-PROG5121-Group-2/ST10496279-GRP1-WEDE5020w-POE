@@ -53,7 +53,7 @@ nav a:hover {
   color: #000;
 }
 
-/* = HERO / MAIN TITLE = */
+/* MAIN TITLE */
 .Home-page h1 {
   text-align: center;
   font-size: 42px;
@@ -64,14 +64,14 @@ nav a:hover {
   letter-spacing: 2px;
 }
 
-/* = CONTENT CONTAINER = */
+/* CONTENT CONTAINER  */
 .Content-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
-/* = HISTORY SECTION = */
+/* HISTORY SECTION  */
 .history-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -117,7 +117,36 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* = FOOTER = */
+/* BUTTONS  */
+.button {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  background-color: var(--secondary);
+  color: #000;
+}
+
+/* INTERNAL LINKS */
+a.internal-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a.internal-link:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
 footer {
   background: var(--primary);
   color: white;
@@ -127,17 +156,19 @@ footer {
   font-size: 14px;
 }
 
-/* = RESPONSIVE DESIGN = */
-@media (max-width: 768px) {
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
   .history-section {
     grid-template-columns: 1fr;
-    padding: 20px;
+    padding: 30px;
   }
 
   .history-section .images {
     grid-template-columns: 1fr;
   }
+}
 
+@media (max-width: 768px) {
   nav {
     gap: 12px;
   }
