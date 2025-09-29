@@ -141,3 +141,13 @@ footer  navy background, white text, centered, padding
 nav reduced gap and font size
 
 nav a smaller padding
+
+## References
+
+- Images sourced from [Unsplash](https://unsplash.com) and [Pexels](https://pexels.com) (royalty-free).
+- MDN Web Docs, 2025. HTML. [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/HTML> [Accessed 29 September 2025].
+- MDN Web Docs, 2025. CSS. [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/CSS> [Accessed 29 September 2025].
+- W3Schools, 2025. HTML & CSS Tutorial. [online] Available at: <https://www.w3schools.com/> [Accessed 29 September 2025].
+- CSS Tricks, 2025. A Complete Guide to Flexbox. [online] Available at: <https://css-tricks.com/snippets/css/a-guide-to-flexbox/> [Accessed 29 September 2025].
+- CSS Tricks, 2025. A Complete Guide to Grid. [online] Available at: <https://css-tricks.com/snippets/css/complete-guide-grid/> [Accessed 29 September 2025].
+- Stack Overflow, 2025. [online] Available at: <https://stackoverflow.com/> [Accessed 29 September 2025].
