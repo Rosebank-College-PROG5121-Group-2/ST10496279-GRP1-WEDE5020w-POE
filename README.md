@@ -3,6 +3,20 @@
 
 ## Changelog
 
+1 [2025-10-02]
+- **Implemented professional card layouts for key client sections (FEAT)**.
+    - Enhanced the 'Client-feedback.html' page by wrapping testimonials in the `.testimonial-card` style for a modern, box-like look.
+    - Implemented the **CSS Grid layout for the 'Quick Plumbing Tips'** on 'about.html', styling each tip as a distinct card with hover effects.
+    - Added consistent global styling for all `<h2>` section headings.
+
+1 [2025-09-29]
+- Implemented semantic HTML structure (using <section> tags) across all pages.
+- Added a Call-to-Action (CTA) button on 'index.html' and removed the default text-decoration (underline).
+- Implemented CSS Grid and Flexbox layouts on 'services.html' and the 'index.html' gallery.
+- Corrected semantic structure of 'about.html' by moving all content inside <main> and corrected footer placement.
+- Added a new 'Helpful Tips' section with a CSS Grid layout to 'about.html'.
+- Fixed minor layout issues (margin collapse) on global body/content containers.
+
 1 [2025-09-29]
 - Added CSS sitemap section to README
 - Updated README formatting
@@ -71,11 +85,15 @@ Header navigation styled with Flexbox.
 
 History section uses CSS Grid for text and images.
 
+Services page uses CSS Grid for the service item cards.
+
+Contact page uses CSS Grid to separate details and form.
+
 Media queries for responsive design.
 
 Typography:
 
-Headings styled with different sizes and colors for hierarchy.
+Headings styled with different sizes and colors for hierarchy. **Now includes custom styling for all H2 section headings.**
 
 Body text is 17px, justified, with line-height for readability.
 
@@ -90,15 +108,17 @@ Sticky header and styled footer.
 
 Sitemap: 
 
-. Global Styles
+1. Global Styles
 
-:root → color variables primary,secondary, light, text-dark
+:root : color variables primary,secondary, light, text-dark
 
-body → base font, background, text color, spacing
+body: base font, background, text color, spacing, margin: 0 reset
+
+**main h2: New consistent styling for main section headings.**
 
 2. Header
 
-header → flex layout, sticky, shadow, padding
+header : flex layout, sticky, shadow, padding
 
 .logo img - logo sizing
 
@@ -128,11 +148,31 @@ nav a:hover - hover effect gold background, black text
 
 .history-section .images img  rounded, shadow, hover zoom
 
-6. Footer
+6. Services & Gallery Layouts
+
+.service-grid - CSS Grid layout for service items (primary layout)
+
+.plumbers-gallery .gallery-images - Flexbox layout for home page image grouping
+
+7. Client Feedback
+
+.testimonial-card - styled background and gold border-left accent. **Now applied to all testimonials on client-feedback.html.**
+
+8. About Us - Helpful Tips
+
+.helpful-tips-section - gold accent border (border-left), light background, padding.
+
+.tips-grid - CSS Grid layout for 4 tip cards.
+
+.tip-card - white background, shadow, hover effect. **Styling and hover effect added.**
+
+.cta-tip - centered button for tips section
+
+9. Footer
 
 footer  navy background, white text, centered, padding
 
-7. Responsive Design 
+10. Responsive Design 
 
 .history-section  single column layout, smaller padding
 
@@ -148,8 +188,6 @@ nav a smaller padding
 - MDN Web Docs, 2025. HTML. [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/HTML> [Accessed 29 September 2025].
 - MDN Web Docs, 2025. CSS. [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/CSS> [Accessed 29 September 2025].
 - W3Schools, 2025. HTML & CSS Tutorial. [online] Available at: <https://www.w3schools.com/> [Accessed 29 September 2025].
-- CSS Tricks, 2025. A Complete Guide to Flexbox. [online] Available at: <https://css-tricks.com/snippets/css/a-guide-to-flexbox/> [Accessed 29 September 2025].
+- CSS Tricks, 2025. A Complete Guide to Flexbox. [online] Available at: <https://css- tricks.com/snippets/css/a-guide-to-flexbox/> [Accessed 29 September 2025].
 - CSS Tricks, 2025. A Complete Guide to Grid. [online] Available at: <https://css-tricks.com/snippets/css/complete-guide-grid/> [Accessed 29 September 2025].
 - Stack Overflow, 2025. [online] Available at: <https://stackoverflow.com/> [Accessed 29 September 2025].
-
-
