@@ -1,8 +1,8 @@
-/*=============================
+/*
   ST10496279-Taite Perumal
   WEDE5020w - POE
   Style.css
-  =============================*/
+  */
 /* GLOBAL STYLES */
 :root {
   --primary: #004080;   /* navy */
@@ -10,10 +10,11 @@
   --light: #f7f9fc;     /* light grey */
   --text-dark: #333;
 }
+/* ... other root variables ... */
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0;             /* <-- CRITICAL: Removes default browser margins */
+  padding: 0;            /* <-- Ensures no default padding exists */
   font-family: 'Segoe UI', Arial, sans-serif;
   background-color: #ffffff;
   color: var(--text-dark);
@@ -120,6 +121,52 @@ nav a:hover {
   transform: scale(1.05);
 }
 
+/* ABOUT US - HELPFUL TIPS STYLES */
+
+.helpful-tips-section {
+  /* Applying the accent border and padding for the whole tips container */
+  border-left: 0.5rem solid var(--secondary); /* Gold accent border */
+  background-color: var(--light); 
+  padding: 2.5rem;
+  margin-top: 3rem;
+  border-radius: 0.75rem; /* Rounded corners for the section */
+}
+
+.tips-grid {
+  /* This is the CSS Grid for the 4 tip cards */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.tip-card {
+  /* The style for each individual "box" */
+  background-color: white; /* White background for contrast */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+ 
+.tip-card:hover {
+  /* Adding a hover effect to make them interactive */
+  transform: translateY(-5px); /* Lift the card slightly */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.tip-card h4 {
+  color: var(--primary); /* Navy color for the tip titles */
+  margin-top: 0;
+  border-bottom: 2px solid var(--secondary); /* Gold line under the title */
+  padding-bottom: 0.5rem;
+}
+
+.cta-tip {
+    text-align: center; /* Center the button below the tips */
+    margin-top: 3rem;
+}
+
 /* = BUTTONS = */
 .button {
   background-color: var(--primary);
@@ -223,4 +270,175 @@ footer {
     width: 100%;
     text-align: center;
   }
+}
+
+/* NEW STYLES FOR IMPROVED LAYOUTS AND ELEMENTS PART 2 */
+
+/* Utility container to centralize content on most pages */
+.Content-container {
+    max-width: 1200px; 
+    margin: 0 auto;    
+    padding: 2rem;
+}
+
+/* 1. HOME PAGE STYLING */
+.company-logo {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1.5rem auto; 
+}
+
+/* Call to Action Button */
+.cta-button {
+  display: block; 
+  max-width: 300px; 
+  margin: 2rem auto 4rem auto;
+  font-size: 1.1rem;
+  padding: 0.8rem 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.button:hover {
+  transform: scale(1.05);
+  background-color: var(--secondary);
+  color: #000;
+  text-decoration: underline; 
+}
+
+.plumbers-gallery {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.plumbers-gallery .gallery-images {
+  /* CSS Layout: Using Flexbox for the gallery (Part 2, 2.4 - Layout Requirement) */
+  display: flex;
+  justify-content: space-around;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* Allows images to wrap on smaller screens */
+}
+
+.plumbers-gallery .gallery-images img {
+  width: 100%;
+  max-width: 300px;
+  height: 250px; /* Consistent height for visual balance */
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 2. SERVICES PAGE STYLING */
+.service-grid {
+  /* CSS Layout: Using Grid for the services section (Part 2, 2.4 - Layout Requirement) */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  padding: 2rem 0;
+}
+
+.service-item {
+  background-color: var(--light);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.service-item h3 {
+  color: var(--primary);
+  border-bottom: 2px solid var(--secondary);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-item img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.service-images {
+  /* Sub-grid for multiple images within one service item */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+.service-images.multi-images {
+  /* Specific sub-grid for the 4-image service section */
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+
+
+/* 3. CLIENT FEEDBACK STYLING */
+.testimonial-card {
+  background-color: var(--light);
+  border-left: 5px solid var(--secondary); /* Accent color for professionalism */
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* 4. CONTACT PAGE STYLING */
+.contact-grid {
+    /* CSS Layout: Using Grid for contact details and form */
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* 1/3 for details, 2/3 for form */
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.contact-form label, .contact-form input, .contact-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+
+/*  RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  /* Stacking the navigation links vertically */
+  nav {
+    flex-direction: column; 
+    gap: 10px;
+  }
+  
+  /* Stacking the main content grids on mobile */
+  .service-grid, .contact-grid {
+    grid-template-columns: 1fr; 
+  }
+  
+  /* Adjusting the multi-image grid for small screens */
+  .service-images.multi-images {
+    grid-template-columns: 1fr 1fr; /* Goes back to 2 columns on small mobile */
+  }
+}
+
+
+/* Targets the first section in the main content area */
+.hero-section {
+    margin-top: 0; 
+}
+
+/* You might also need to target the h1/h2 directly if it's causing the push */
+.hero-section h1 {
+    margin-top: 0;
+}
+
+main h2 {
+    font-size: 2rem;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--secondary);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -3,14 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact us |</title>
-    <!--Title -->
+    <title>Contact us | JHB NORTH PLUMBING</title>
     <link rel="stylesheet" href="style.css" />
-
-
-
   </head>
-
+ 
   <body>
     <header>
       <nav>
@@ -22,25 +18,41 @@
       </nav>
     </header>
 
-    <main class="contact-page">
+    <main class="contact-page Content-container">
       <h2>Contact us</h2>
       <p>
         If you have any plumbing needs, questions, or would like a quote, please
         get in touch with us. We are always happy to help.
       </p>
-      <h3>Our Contact Details:</h3>
-      <p><strong>Phone:</strong> 011 123 4567</p>
-      <p><strong>Email:</strong> info@jhbnorthplumbing.co.za</p>
-      <p><strong>Address:</strong> Johannesburg North, Gauteng, South Africa</p>
 
-      <footer>
-        <!-- Footer inside main-->
-        <p>&copy; 2025 JHB North Plumbing. All Rights Reserved.</p>
-      </footer>
+      <div class="contact-grid">
+        <section class="contact-details">
+            <h3>Our Contact Details:</h3>
+            <p><strong>Phone:</strong> <a href="tel:0111234567">011 123 4567</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@jhbnorthplumbing.co.za">info@jhbnorthplumbing.co.za</a></p>
+            <p><strong>Address:</strong> Johannesburg North, Gauteng, South Africa</p>
+        </section>
+
+        <section class="contact-form-section">
+            <h3>Request a Quote or Service</h3>
+            <form action="#" method="POST" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your full name">
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="E.g., 082 123 4567">
+
+                <label for="message">Describe your issue or request:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Burst pipe, geyser replacement, etc."></textarea>
+                
+                <button type="submit" class="button">Send Enquiry</button>
+            </form>
+        </section>
+      </div>
     </main>
 
     <footer>
-      <p></p>
+      <p>&copy; 2025 JHB North Plumbing. All Rights Reserved.</p>
     </footer>
   </body>
 </html>
