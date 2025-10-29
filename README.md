@@ -1,193 +1,119 @@
-# JHB NORTH PLUMBING WEBSITE
+# 🛠️ JHB NORTH PLUMBING WEBSITE
+
 ## ST10496279-GRP1-WEDE5020W-POE
 
-## Changelog
+---
 
-1 [2025-10-02]
-- **Implemented professional card layouts for key client sections (FEAT)**.
-    - Enhanced the 'Client-feedback.html' page by wrapping testimonials in the `.testimonial-card` style for a modern, box-like look.
-    - Implemented the **CSS Grid layout for the 'Quick Plumbing Tips'** on 'about.html', styling each tip as a distinct card with hover effects.
-    - Added consistent global styling for all `<h2>` section headings.
+## 1. Student Information
 
-1 [2025-09-29]
-- Implemented semantic HTML structure (using <section> tags) across all pages.
-- Added a Call-to-Action (CTA) button on 'index.html' and removed the default text-decoration (underline).
-- Implemented CSS Grid and Flexbox layouts on 'services.html' and the 'index.html' gallery.
-- Corrected semantic structure of 'about.html' by moving all content inside <main> and corrected footer placement.
-- Added a new 'Helpful Tips' section with a CSS Grid layout to 'about.html'.
-- Fixed minor layout issues (margin collapse) on global body/content containers.
+* **Name:** Taite Perumal
+* **Student Number:** ST10496279
+* **Module:** WEDE5020W (Web Development Introduction)
+* **Assessment:** Part 1,2,3 of my Web Development POE.
 
-1 [2025-09-29]
-- Added CSS sitemap section to README
-- Updated README formatting
+---
 
-1[2025-09-28]
-- Fixed merge conflicts in Git repository
-- Updated History section images and text in CSS
+## 2. Project Overview & Goals
 
-1 [2025-09-27]
-- Created initial project structure
-- Added header, hero, content, and footer sections in HTML and CSS
+This project represents a fully responsive website built for **JHB North Plumbing**, a long-standing plumbing business in Johannesburg North.
 
-1
+### Website Goals
+* Showcase the full range of services offered.
+* Provide authentic client testimonials (`client-feedback.html`).
+* Offer clear contact details and location (`contact.html`).
+* Build trust with potential clients through a professional online presence.
 
-1. Student Info
+---
 
-- Name: Taite Perumal
-- Student Number: ST10496279
+## 3. Sitemap
 
-1. Project Overview
-   This is Part 1 of my Web Development POE.  
-   The website is built for JHB North Plumbing, a plumbing business in Johannesburg North.  
-   It showcases services, client feedback, and provides an easy way to contact the business.
+The project consists of five primary HTML pages:
 
-1. Website Goals
+* `index.html` (Home)
+* `about.html` (About Us)
+* `services.html` (Our Services)
+* `client-feedback.html` (Client Feedback)
+* `contact.html` (Contact Us)
 
-- Showcase services offered
-- Provide client testimonials
-- Offer contact details and location
-- Build trust with potential clients
+---
 
-1. Sitemap
+## 4. Key Features & Styling 🎨
 
-- index.html (Home)
-- about.html (About Us)
-- services.html (Our Services)
-- client-feedback.html (Client Feedback)
-- contact.html (Contact Us)
+This site uses **HTML5** for structure, **CSS3** for styling, and **JavaScript (jQuery)** for interactivity.
 
-1. Changelog
+### Layout & Structure (CSS Grid & Flexbox)
 
--  Initial HTML structure created
--  Added navigation menu and linked all pages
--  Organised files into css/, js/, images/
--  Added comments for readability
--  Updated image paths and added alt text
--  Initial HTML structure created
--  Added navigation menu and linked all pages
--  Organised files into css/, js/, images/
--   bAdded comments for readability
--  Updated image paths and added alt text
+* **Header Navigation:** Styled using **Flexbox**.
+* **History Section (`about.html`):** Uses **CSS Grid** for a responsive text and image layout.
+* **Services Page (`services.html`):** Uses **CSS Grid** for the main service item cards.
+* **Contact Page (`contact.html`):** Uses **CSS Grid** to separate contact details and the form.
+* **Helpful Tips (`about.html`):** Uses **CSS Grid** for the 4 tip cards.
+* **Image Gallery (`index.html`):** Uses **Flexbox** for home page image grouping.
+* **Responsiveness:** Implemented comprehensive **media queries** for full adaptability across devices.
 
-1. References
+### Decoration & Typography
 
-- Images sourced from [Unsplash](https://unsplash.com) and [Pexels](https://pexels.com) (royalty-free).
+* **Color Scheme:** Blue (`--primary`), gold (`--secondary`), and white for a professional look.
+* **Headings:** New, consistent styling for all main section headings (`main h2`).
+* **Client Sections:** Testimonial and Tip cards use strong visual accents (e.g., gold `border-left`) and include box shadows and hover effects.
+* **Decoration:** Includes rounded corners, box shadows, and a sticky header/styled footer.
 
+---
 
-Part 2 css & styling
-This is a responsive website for JHB North Plumbing, created using HTML and CSS.
+## 5. CSS Sitemap / Style Guide
 
-Features
+This outlines the main sections of the `style.css` file:
 
-Layout:
+1.  **Global Styles:** `:root` variables, `body` reset, and consistent `main h2` styling.
+2.  **Header:** `header`, `.logo img`, `nav` (Flexbox).
+3.  **Hero / Main Title:** `.Home-page h1` styling.
+4.  **Content Container:** `.Content-container` max width and padding.
+5.  **History Section:** `.history-section` (Grid layout), text, and images.
+6.  **Services & Gallery Layouts:** `.service-grid` (Grid) and `.plumbers-gallery .gallery-images` (Flexbox).
+7.  **Client Feedback:** `.testimonial-card` styling.
+8.  **About Us - Helpful Tips:** `.helpful-tips-section` and `.tips-grid` (Grid layout) with `.tip-card` styling.
+9.  **Footer:** `footer` background and text.
+10. **Responsive Design:** All `@media` queries.
 
-Header navigation styled with Flexbox.
+---
 
-History section uses CSS Grid for text and images.
+## 6. Changelog
 
-Services page uses CSS Grid for the service item cards.
+This is a record of key development commits and changes made throughout the project.
 
-Contact page uses CSS Grid to separate details and form.
+1.  **[2025-10-02] Feature Implementation & Refinement**
+    * **Implemented professional card layouts** for key client sections (FEAT).
+        * Enhanced the 'Client-feedback.html' page by wrapping testimonials in the `.testimonial-card` style.
+        * Implemented the **CSS Grid layout for the 'Quick Plumbing Tips'** on 'about.html', styling each tip as a distinct card with hover effects.
+        * Added consistent global styling for all `<h2>` section headings.
 
-Media queries for responsive design.
+2.  **[2025-09-29] Semantic & Layout Implementation**
+    * Implemented semantic HTML structure (using `<section>` tags) across all pages.
+    * Added a Call-to-Action (CTA) button on 'index.html' and removed default text-decoration.
+    * Implemented **CSS Grid and Flexbox layouts** on 'services.html' and the 'index.html' gallery.
+    * Corrected semantic structure of 'about.html' by moving all content inside `<main>` and correcting footer placement.
+    * Added a new 'Helpful Tips' section with a CSS Grid layout to 'about.html'.
+    * Fixed minor layout issues (margin collapse) on global body/content containers.
 
-Typography:
+3.  **[2025-09-28] Initial Setup & Git Management**
+    * Fixed merge conflicts in Git repository.
+    * Updated History section images and text in CSS.
 
-Headings styled with different sizes and colors for hierarchy. **Now includes custom styling for all H2 section headings.**
-
-Body text is 17px, justified, with line-height for readability.
-
-Decoration:
-
-Blue, gold, and white color scheme for a professional look.
-
-Box shadows, rounded corners, and hover effects.
-
-Sticky header and styled footer.
-
-
-Sitemap: 
-
-1. Global Styles
-
-:root : color variables primary,secondary, light, text-dark
-
-body: base font, background, text color, spacing, margin: 0 reset
-
-**main h2: New consistent styling for main section headings.**
-
-2. Header
-
-header : flex layout, sticky, shadow, padding
-
-.logo img - logo sizing
-
-nav - flex navigation container
-
-nav a - link styles (padding, font, transition)
-
-nav a:hover - hover effect gold background, black text
-
-3. Hero / Main Title
-
-.Home-page h1 large bold centered title, uppercase, navy color
-
-4. Content Container
-
-.Content-container max width, padding, centered layout
-
-5. History Section
-
-.history-section  grid, background, border-left accent, shadow
-
-.history-section .text h2  subsection heading
-
-.history-section .text p  justified paragraph text
-
-.history-section .images  grid for images
-
-.history-section .images img  rounded, shadow, hover zoom
-
-6. Services & Gallery Layouts
-
-.service-grid - CSS Grid layout for service items (primary layout)
-
-.plumbers-gallery .gallery-images - Flexbox layout for home page image grouping
-
-7. Client Feedback
-
-.testimonial-card - styled background and gold border-left accent. **Now applied to all testimonials on client-feedback.html.**
-
-8. About Us - Helpful Tips
-
-.helpful-tips-section - gold accent border (border-left), light background, padding.
-
-.tips-grid - CSS Grid layout for 4 tip cards.
-
-.tip-card - white background, shadow, hover effect. **Styling and hover effect added.**
-
-.cta-tip - centered button for tips section
-
-9. Footer
-
-footer  navy background, white text, centered, padding
-
-10. Responsive Design 
-
-.history-section  single column layout, smaller padding
-
-.history-section .images  stacked images
-
-nav reduced gap and font size
-
-nav a smaller padding
-
-## References
-
-- Images sourced from [Unsplash](https://unsplash.com) and [Pexels](https://pexels.com) (royalty-free).
-- MDN Web Docs, 2025. HTML. [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/HTML> [Accessed 29 September 2025].
-- MDN Web Docs, 2025. CSS. [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/CSS> [Accessed 29 September 2025].
-- W3Schools, 2025. HTML & CSS Tutorial. [online] Available at: <https://www.w3schools.com/> [Accessed 29 September 2025].
-- CSS Tricks, 2025. A Complete Guide to Flexbox. [online] Available at: <https://css- tricks.com/snippets/css/a-guide-to-flexbox/> [Accessed 29 September 2025].
-- CSS Tricks, 2025. A Complete Guide to Grid. [online] Available at: <https://css-tricks.com/snippets/css/complete-guide-grid/> [Accessed 29 September 2025].
-- Stack Overflow, 2025. [online] Available at: <https://stackoverflow.com/> [Accessed 29 September 2025].
+4.  **[2025-09-27] Initial Structure**
+    * Created initial project structure (header, hero, content, and footer sections).
+    * Added navigation menu and linked all pages.
+    * Organized files into `css/`, `js/`, and `images/`.
+
+---
+
+## 7. References
+
+* **Images:** Sourced from [Unsplash](https://unsplash.com) and [Pexels](https://pexels.com) (royalty-free).
+* **Documentation:**
+    * MDN Web Docs, 2025. HTML & CSS.
+    * W3Schools, 2025. HTML & CSS Tutorial.
+* **Layout Guidance:**
+    * CSS Tricks, 2025. A Complete Guide to Flexbox.
+    * CSS Tricks, 2025. A Complete Guide to Grid.
+* **Community:**
+    * Stack Overflow, 2025.
