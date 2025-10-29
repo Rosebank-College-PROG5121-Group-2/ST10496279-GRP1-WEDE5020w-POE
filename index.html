@@ -4,37 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | JHB NORTH PLUMBING</title>
+
+    
     <meta name="description" content="JHB North Plumbing provides reliable domestic, industrial, and commercial plumbing services in Johannesburg North. Call us 24/7 for burst pipes, geyser replacements, and drain cleaning." />
+    <meta name="keywords" content="plumber Johannesburg, JHB North Plumbing, burst pipe repair, geyser installation, emergency plumbing, drain cleaning, commercial plumbing" />
+    <meta name="author" content="Taite Perumal" />
+    <link rel="canonical" href="https://jhbnorthplumbing.co.za/" />
+
+    <!-- Site icon and CSS -->
     <link rel="icon" type="image/jpg" href="favicon.jpg" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <!-- Header navigation -->
     <header>
       <nav>
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="about.html">About us</a>
         <a href="services.html">Our services</a>
-        <a href="Client-feedback.html">Client-feedback</a>
+        <a href="Client-feedback.html">Client feedback</a>
         <a href="contact.html">Contact us</a>
       </nav>
     </header>
 
-    <main class="Home-page Content-container">
+    <!-- HERO / INTRO SECTION -->
+    <main class="home-page content-container">
       <section class="hero-section intro">
         <img
           src="images/Logo-3.jpg"
           class="company-logo"
-          alt="JHB NORTH PLUMBING company logo"
+          alt="JHB North Plumbing company logo"
         />
         <h1>JHB NORTH PLUMBING</h1>
         <a href="contact.html" class="button cta-button">Get a Free Quote Now!</a>
       </section>
 
+      <!-- HISTORY SECTION -->
       <section class="history-home">
         <h2>Brief History on Us</h2>
         <p>
-          JHB NORTH PLUMBING was established nearly 30 years ago with the goal
+          JHB North Plumbing was established nearly 30 years ago with the goal
           of delivering reliable, high-quality plumbing solutions to homes and
           businesses in Johannesburg and surrounding areas. From small
           residential repairs to large-scale commercial and industrial projects,
@@ -42,30 +52,31 @@
           efficiency, and attention to detail. Over the years, JHB North
           Plumbing has successfully completed major developments in estates such
           as Featherbrooke, Douglasdale, Eagle Canyon, Waterfall Country Estate,
-          Silver Valley Estate, and Pretoria. The company is also proud to have
-          handled all plumbing installations at The Palm Continental Hotel in
-          Johannesburg. Through consistent service excellence, JHB North
-          Plumbing has grown from a small local business into a trusted name in
-          the plumbing industry, recognized for its personalized service,
-          cost-effective solutions, and commitment to customer satisfaction.
+          Silver Valley Estate, and Pretoria. The company also handled all
+          plumbing installations at The Palm Continental Hotel in Johannesburg.
         </p>
       </section>
 
-
+      <!-- GALLERY SECTION -->
       <section class="plumbers-gallery">
         <h3>Plumbers at Work</h3>
-        <div class="gallery-images">
-            <img src="images/plumber.jpg" alt="A plumber working on a sink" />
-            <img src="images/plumber.png" alt="A cartoon illustration of a plumber" />
-            <img src="images/download.jpg" alt="Another plumber at work" />
+        <div class="gallery">
+          <img src="images/plumber.jpg" alt="A plumber working on a sink" />
+          <img src="images/plumber.png" alt="Cartoon illustration of a plumber" />
+          <img src="images/download.jpg" alt="Plumber fixing a pipe" />
         </div>
       </section>
     </main>
 
+    <!-- FOOTER SECTION -->
     <footer>
       <p>&copy; 2025 JHB North Plumbing. All Rights Reserved.</p>
+      <button id="themeToggle">Light Mode</button>
+      <button id="backToTop" title="Back to top">↑</button>
     </footer>
-    <script src="js/script.js"></script>
+
+    <!-- External JS scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
-
