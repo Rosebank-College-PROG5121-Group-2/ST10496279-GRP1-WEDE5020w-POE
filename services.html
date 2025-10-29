@@ -4,69 +4,119 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Services | JHB NORTH PLUMBING</title>
+
+    <!-- SEO META TAGS  -->
+    <meta
+      name="description"
+      content="JHB North Plumbing offers professional plumbing services including drain cleaning, geyser replacement, pipe repairs, and 24/7 emergency maintenance across Johannesburg North."
+    />
+    <meta
+      name="keywords"
+      content="plumbing services Johannesburg, burst pipes, blocked drains, geyser replacement, pipe repair, emergency plumbing, JHB North Plumbing"
+    />
+    <meta name="author" content="Taite Perumal" />
+    <link rel="canonical" href="https://jhbnorthplumbing.co.za/services.html" />
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/jpg" href="favicon.jpg" />
   </head>
 
   <body>
+    <!-- 
+         NAVIGATION BAR
+         -->
     <header>
       <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About us</a>
-        <a href="services.html">Our services</a>
-        <a href="Client-feedback.html">Client-feedback</a>
+        <a href="services.html" class="active">Our services</a>
+        <a href="Client-feedback.html">Client feedback</a>
         <a href="contact.html">Contact us</a>
       </nav>
     </header>
 
-    <main class="services-page Content-container">
-      <h2>Services We Offer</h2>
+    <!--
+         MAIN SERVICE CONTENT
+        -->
+    <main class="services-page content-container">
+      <h1>Our Plumbing Services</h1>
+      <p>Reliable, affordable, and available 24/7 for your plumbing needs.</p>
 
+      <!-- SEARCH BAR (JS filter feature) -->
+      <input
+        type="text"
+        id="searchBar"
+        placeholder="Search for a service..."
+        aria-label="Search services"
+      />
+
+      <!--  SERVICE GRID -->
       <div class="service-grid">
-
-        <section class="service-item">
-            <h3>Cleaning of Blocked Drains</h3>
-            <img src="images/images.jpg" alt="Cleaning of blocked drains" />
+        <section class="service-card">
+          <h3>Cleaning of Blocked Drains</h3>
+          <img src="images/images.jpg" alt="Cleaning of blocked drains" />
+          <p>Efficient drain cleaning using eco-friendly, high-pressure methods.</p>
         </section>
 
-        <section class="service-item">
-            <h3>Replacing Burst Geysers</h3>
-            <img src="images/Plumber replacing geyser.jpg" alt="Plumber replacing geyser" />
+        <section class="service-card">
+          <h3>Replacing Burst Geysers</h3>
+          <img
+            src="images/Plumber replacing geyser.jpg"
+            alt="Plumber replacing geyser"
+          />
+          <p>We replace, repair, and maintain burst geysers for all property types.</p>
         </section>
 
-        <section class="service-item">
-            <h3>Fixing Leaky Pipes</h3>
-            <img src="images/plumber fixing leaking pipe.jpg" alt="Plumber fixing a leaking pipe" />
+        <section class="service-card">
+          <h3>Fixing Leaky Pipes</h3>
+          <img
+            src="images/plumber fixing leaking pipe.jpg"
+            alt="Plumber fixing a leaking pipe"
+          />
+          <p>We detect and repair leaking pipes before they cause costly damage.</p>
         </section>
 
-        <section class="service-item">
-            <h3>Burst Pipes and Repair of Damaged Drains</h3>
-            <div class="service-images">
-              <img src="images/burst-pipe.jpg" alt="Burst water pipe" />
-              <img src="images/drain-being-fixed.jpg" alt="Drain being fixed" />
-            </div>
+        <section class="service-card">
+          <h3>Burst Pipes & Drain Repairs</h3>
+          <div class="service-images">
+            <img src="images/burst-pipe.jpg" alt="Burst water pipe" />
+            <img src="images/drain-being-fixed.jpg" alt="Drain being fixed" />
+          </div>
+          <p>Full repair of burst pipes and damaged drains with durable materials.</p>
         </section>
 
-        <section class="service-item">
-            <h3>Leaking Toilets, Taps, Basins, and Sinks</h3>
-            <div class="service-images multi-images">
-                <img src="images/leaking-toilet.jpg" alt="Leaking toilet" />
-                <img src="images/leaking-basin.jpg" alt="Leaking basin" />
-                
-            </div>
+        <section class="service-card">
+          <h3>Leaking Toilets, Taps & Basins</h3>
+          <div class="service-images multi-images">
+            <img src="images/leaking-toilet.jpg" alt="Leaking toilet" />
+            <img src="images/leaking-basin.jpg" alt="Leaking basin" />
+          </div>
+          <p>We repair leaking taps, toilets, and basins quickly and affordably.</p>
         </section>
 
-        <section class="service-item call-out">
-            <h3>Facility Maintenance & More</h3>
-            <p>Leaking urinals and flush masters</p>
-            <p>Toilet installations and maintenance</p>
-            <p>Our Team is on Standby 24/7</p>
+        <section class="service-card call-out">
+          <h3>Facility Maintenance & More</h3>
+          <p>Regular plumbing inspections for buildings and commercial spaces.</p>
+          <p>Emergency call-outs available 24/7 — our team is always ready!</p>
         </section>
-
       </div>
     </main>
+
+    <!--
+         FOOTER SECTION
+         -->
     <footer>
       <p>&copy; 2025 JHB North Plumbing. All Rights Reserved.</p>
+
+      <!-- JS-interactive buttons -->
+      <button id="themeToggle">Light Mode</button>
+      <button id="backToTop" title="Back to top">↑</button>
     </footer>
+
+    <!-- 
+         SCRIPT LINKS
+          -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
-
