@@ -1,53 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Feedback | JHB NORTH PLUMBING</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Client-feedback | JHB NORTH PLUMBING</title>
+    <!--  SEO META TAGS -->
+    <meta
+      name="description"
+      content="Read what satisfied customers say about JHB North Plumbing. Trusted plumbing services across Johannesburg North for over 30 years."
+    />
+    <meta
+      name="keywords"
+      content="JHB North Plumbing reviews, plumbing testimonials, client feedback, Johannesburg plumbing services"
+    />
+    <meta name="author" content="Taite Perumal" />
+    <link rel="canonical" href="https://jhbnorthplumbing.co.za/client-feedback.html" />
+
     <link rel="stylesheet" href="style.css" />
-</head>
+    <link rel="icon" href="favicon.jpg" type="image/jpg" />
+  </head>
 
-<body>
+  <body>
+    <!-- 
+         NAVIGATION BAR
+          -->
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About us</a>
-            <a href="services.html">Our services</a>
-            <a href="client-feedback.html">Client-feedback</a>
-            <a href="contact.html">Contact us</a>
-        </nav>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="services.html">Our services</a>
+        <a href="client-feedback.html" class="active">Client feedback</a>
+        <a href="contact.html">Contact us</a>
+      </nav>
     </header>
 
-    <main class="Client-feedback-page Content-container">
-        <h2>Our Clients experience:</h2>
-        
-        <div class="testimonial-card">
-            <p>"JHB North Plumbing fixed a major leak in our estate quickly and professionally. Highly recommended!"</p>
-            <p><strong>- Sarah M., Featherbrooke</strong></p>
+    <!-- 
+         MAIN CONTENT (ACCORDION TESTIMONIALS)
+          -->
+    <main class="client-feedback-page content-container">
+      <h1>Our Clients’ Experience</h1>
+      <p>Click on each client’s name to read their feedback about our services.</p>
+
+      <!-- Accordion-style testimonials using .timeline-header and .timeline-content -->
+      <section class="testimonial-section">
+
+        <div class="timeline-item">
+          <div class="timeline-header">⭐ Sarah M. – Featherbrooke</div>
+          <div class="timeline-content">
+            <p>
+              “JHB North Plumbing fixed a major leak in our estate quickly and
+              professionally. Highly recommended!”
+            </p>
+          </div>
         </div>
 
-        <div class="testimonial-card">
-            <p>"Excellent workmanship and reliable service. They did all the plumbing for our new offices at Eagle Canyon."</p>
-            <p><strong>- David K., Business Owner</strong></p> 
+        <div class="timeline-item">
+          <div class="timeline-header">⭐ David K. – Eagle Canyon</div>
+          <div class="timeline-content">
+            <p>
+              “Excellent workmanship and reliable service. They did all the plumbing for our new offices at Eagle Canyon.”
+            </p>
+          </div>
         </div>
 
-        <div class="testimonial-card">
-            <p>"Affordable, friendly, and efficient. I always call them for my home plumbing needs."</p>
-            <p><strong>- Priya R., Douglasdale</strong></p>
+        <div class="timeline-item">
+          <div class="timeline-header">⭐ Priya R. – Douglasdale</div>
+          <div class="timeline-content">
+            <p>
+              “Affordable, friendly, and efficient. I always call them for my home plumbing needs.”
+            </p>
+          </div>
         </div>
 
-        <div class="testimonial-card">
-            <p>"The team handled our hotel project with professionalism from start to finish. Great job!"</p>
-            <p><strong>- Hotel Manager, Johannesburg</strong></p>
+        <div class="timeline-item">
+          <div class="timeline-header">⭐ Hotel Manager – Johannesburg</div>
+          <div class="timeline-content">
+            <p>
+              “The team handled our hotel project with professionalism from start to finish. Great job!”
+            </p>
+          </div>
         </div>
-
+      </section>
     </main>
 
+    <!-- 
+         FOOTER SECTION
+          -->
     <footer>
-        <p>&copy; 2025 JHB North Plumbing. All Rights Reserved.</p>
+      <p>&copy; 2025 JHB North Plumbing. All Rights Reserved.</p>
+      <button id="themeToggle">Light Mode</button>
+      <button id="backToTop" title="Back to top">↑</button>
     </footer>
-    
-</body>
-</html>
 
+    <!-- 
+         SCRIPTS
+          -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
