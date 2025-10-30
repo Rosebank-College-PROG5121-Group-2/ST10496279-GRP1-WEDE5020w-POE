@@ -1,25 +1,4 @@
 
-// ACCORDION FUNCTION (TESTIMONIAL/FAQ SECTION)
-function initAccordion() {
-    // Hides all content initially (ensure this is hidden in your CSS too for a flash-free start)
-    $('.timeline-content').hide(); 
-
-    $('.timeline-header').on('click', function() {
-        const $thisContent = $(this).next('.timeline-content');
-
-        // Close other open sections and remove 'active' class from other headers
-        $('.timeline-content').not($thisContent).slideUp(300);
-        $('.timeline-header').not($(this)).removeClass('active');
-        
-        // Toggle the clicked section's visibility and 'active' class
-        $(this).toggleClass('active');
-        $thisContent.slideToggle(300);
-    });
-}
-initAccordion();
-
-
-   
     // LIGHTBOX GALLERY FUNCTIONALITY
     // Allows images to open in a popup (for before/after plumbing work)
     
@@ -156,4 +135,22 @@ function initMap() {
             title: "JHB North Plumbing - We’re here!"
         });
     }
+}
+
+function initMap() {
+  // Set map location (example: Rosebank, Johannesburg)
+  const location = { lat: -26.145, lng: 28.041 };
+
+  // Create a new map inside the #map div
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 13,
+    center: location,
+  });
+
+  // Add a marker
+  new google.maps.Marker({
+    position: location,
+    map: map,
+    title: "JHB North Plumbing",
+  });
 }
