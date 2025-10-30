@@ -459,7 +459,7 @@ main h2 {
 }
 
 .timeline-content {
-  display: none;
+  display: block;
   padding: 10px 15px;
   background: #f9f9f9;
   border-left: 3px solid #007bbd;
@@ -519,29 +519,42 @@ main h2 {
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 /* In your style.css file */
+
+/* 1. Ensure the header doesn't look clickable (remove cursor: pointer) */
+.timeline-header {
+  background: #004b7a;
+  color: #fff;
+  padding: 10px 15px;
+  /* cursor: pointer; <--- Remove/ensure this line is gone */
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+/* 2. MAKE CONTENT VISIBLE and give it proper full borders */
 .timeline-content {
-    display: none;
+  display: block; 
+  padding: 15px; 
+  background: #f9f9f9;
+  border: 1px solid #ddd; /* Added a subtle border around the whole block */
+  border-left: 3px solid var(--secondary); /* Keep the gold accent */
+  border-radius: 5px; /* Apply full rounded corners */
+  margin-bottom: 25px; /* Add space below the whole testimonial box */
 }
 
-/* Optional: Add styling for the active state */
-.timeline-header.active {
-    /* Style to indicate the section is open */
-}
-
-/* ADD THIS NEW RULE */
 /* Specific styling for the images in the 4-image grid to ensure they don't overlap */
 .service-images.multi-images img {
     /* Ensures the image respects the width of its grid cell */
     width: 100%; 
     /* Allows the height to scale automatically based on the width */
     height: auto; 
-    /* Optional: Sets a max height to prevent overly tall images */
     max-height: 120px; 
     object-fit: cover;
 }
 
 
-/* ADD THIS NEW RULE to force a clean 2x2 layout for the four images */
+
 .service-images.multi-images {
     display: flex; /* Use Flexbox for predictable alignment */
     flex-wrap: wrap; /* Allows images to wrap onto a second line */
@@ -550,7 +563,7 @@ main h2 {
     gap: 10px; /* Small space between the images */
 }
 
-/* MODIFY this rule (or ensure it's present) */
+
 .service-images.multi-images img {
     /* (100% - 10px gap) / 2 = 45% is a safe value */
     width: calc(50% - 5px); 
@@ -558,11 +571,10 @@ main h2 {
     /* Ensures the image scales down, maintaining aspect ratio */
     height: 150px; /* Set a fixed height for visual consistency */
     
-    object-fit: cover; /* Crucial: Crops the image to fit the box without distortion */
-    border-radius: 5px;
+    object-fit: cover; /
 }
 
-/* Optional: Add a media query for very small screens */
+
 @media (max-width: 480px) {
     .service-images.multi-images {
         flex-direction: column; /* Stack them vertically on tiny phones */
@@ -570,4 +582,124 @@ main h2 {
     .service-images.multi-images img {
         width: 100%; /* Make images full-width when stacked */
     }
+}
+
+/* New style for the floating booking button */
+#bookNowFloat {
+    position: fixed; /* Makes it stick to the screen */
+    bottom: 20px;
+    right: 20px;
+    z-index: 999; /* Ensures it is on top of other content */
+    background-color: var(--secondary); /* Highlight color (Gold) */
+    color: var(--primary); /* Text color (Navy) */
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 50px; /* Pill shape */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    text-transform: uppercase;
+}
+
+#bookNowFloat:hover {
+    transform: scale(1.1);
+}
+
+/* ===== Booking Section Styling ===== */
+.booking-section {
+  background-color: #f8f9fb;
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 4px solid #ffc107;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  margin-top: 50px;
+}
+
+.booking-section h2 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.booking-section p {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+/* Calendly Widget */
+.calendly-inline-widget {
+  border: 2px solid #003366;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Floating "Book Online" Button ===== */
+#bookNowFloat {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #ffc107;
+  color: #003366;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 16px 22px;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  z-index: 999;
+}
+
+#bookNowFloat:hover {
+  background-color: #003366;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* ===== Contact Form Styling ===== */
+.contact-form-section {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 600;
+  color: #003366;
+  margin-top: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+.contact-form .button {
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form .button:hover {
+  background-color: #ffc107;
+  color: #003366;
+  font-weight: bold;
 }
